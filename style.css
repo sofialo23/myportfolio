@@ -1,0 +1,159 @@
+html, body{
+	width: 100%;
+}
+
+.container{
+	width: 100%;
+
+}
+
+.menu-bar{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 100px;
+	margin-top: 25px;
+}	
+
+.menu-bar a{
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px 20px;	
+	color: black
+}
+
+.menu-bar a:hover{
+	color: #d94f4f;
+}
+
+.home{
+	margin-top: 2%;
+	background-color: #c4c4c4;
+	width: 100%;
+	height: 550px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-shadow: 0 0 8px 8px white inset;
+
+}
+
+#home-text{
+	flex-basis: 50%;
+	height: 100%;
+	text-align: center;
+	color: black;
+	font-size: 60px;
+	margin-left: 0%;
+}
+
+#home-text p{
+	margin-top: 30%;
+}
+
+#home-img{
+	flex-basis: 50%;
+	height: 520px;
+	background-image: url("media/hero5.jpg");
+	background-size: cover;
+	margin: 1% 1%;
+	box-shadow: 0 0 10px 10px #c4c4c4 inset;
+}
+
+
+#port{
+	font-weight: bold;
+	color: #d94f4f;
+}
+
+
+.projects{
+	width: 100%;
+	height: auto;	
+}
+
+.projects-title{
+	text-align: center;
+	font-size: 40px;
+	margin: 50px;
+}
+
+.projects-content{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.project-item{
+	width: 350px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 33%;
+	margin-bottom: 20px;
+}
+
+
+
+.project-item img{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border-radius: 15px;
+	-webkit-transition: all 1s ease-out;
+
+}
+
+.item-description{
+	margin-top: 10%;
+	font-size: 30px;
+}
+
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 250px;
+  width: 250px;	
+  border-radius: 15px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d94f4f ;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__wrap:hover .img__description {
+	
+  	visibility: visible;
+  	opacity: 1;
+  	transform: scale(1.1);
+
+}
+
+.experience{
+	width: 100%;
+	height: 50px;
+	background-color: #848482	;
+}
