@@ -4,34 +4,34 @@
 	<title>Sofia Lopez Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/7067867139.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="menu-bar">
-			
-				<a href="#">Home</a>
-				<a href="#">Projects</a>
-				<a href="#">My GitHub</a>
-				<a href="#">About Me</a>
+				<a href="#" id="home-b">Home</a>
+				<a href="#" id="projects-b">Projects</a>
+				<a href="#" id="aboutme-b">About Me</a>
+				<a href="#" id="contact-b">Contact</a>
 			
 		</div><!-- end of menu-bar-->
 
 		<div class="home">
 			
 			<div id="home-text">
-				<p>Welcome To <span id="port">My Portfolio</span></p>
+				<p>Welcome To <div id="port">My Portfolio</div></p>
 			</div>
 			
 			<div id="home-img" >
-				<!-- end of home-<img id="home-image" src="media/hero5.jpg"/>-->
 			</div>
 
 		</div><!-- end of home-->
 
 		<div class="projects"><!-- start of projects-->
 		
-			<h3 class="projects-title">My Projects</h3>
+			<h3 class="projects-title">MY PROJECTS</h3>
 			
 			<div class="projects-content">
 
@@ -53,7 +53,7 @@
 					</div>
 					<div class="text-wrap">
 						<p class="item-description">A website created to keep everyone updated on school's events</p>
-						<a class="codelink" href="#">Source Code</a>
+						<a class="codelink" href="https://github.com/sofialo23/myportfolio/tree/main/projects/events/examples" target="_blank">GitHub</a>
 					</div>
 					
 				</div>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="text-wrap">
 						<p class="item-description">A basic drums machine with 2 different sets, power and volume buttons.</p>
-						<a class="codelink" href="#">Source Code</a>
+						<a class="codelink" href="https://github.com/sofialo23/drums-machine" target="_blank">GitHub</a>
 					</div>
 				</div>
 
@@ -91,7 +91,7 @@
 					</div>
 					<div class="text-wrap">
 						<p class="item-description">See the markdown text you type down in HTML format right away.</p>
-						<a class="codelink" href="#">Source Code</a>
+						<a class="codelink" href="#" target="_blank">GitHub</a>
 					</div>
 				</div>
 
@@ -109,7 +109,7 @@
 					</div>
 					<div class="text-wrap">
 						<p class="item-description">Looking for some inspiration? Check out some nice quotes.</p>
-						<a class="codelink" href="#">Source Code</a>
+						<a class="codelink" href="https://github.com/sofialo23/quotes-machine-jQuery" target="_blank">GitHub</a>
 					</div>
 				</div>
 
@@ -127,7 +127,7 @@
 					</div>
 					<div class="text-wrap">
 						<p class="item-description">Chan doesn't like to take showers but he loves his slippers, help him get them without getting wet.</p>
-						<a class="codelink" href="#">Source Code</a>
+						<a class="codelink" href="https://github.com/sofialo23/myportfolio/tree/main/projects/Chan-game" target="_blank">GitHub</a>
 					</div>
 				</div>
 
@@ -147,19 +147,98 @@
 					</div>
 					<div class="text-wrap">
 						<p class="item-description">A basic members online store in which you can search for items and simulates a cart</p>
-						<a class="codelink" href="#">Source Code</a>
+						<a class="codelink" href="https://github.com/sofialo23/myportfolio/tree/main/projects/music-store" target="_blank">GitHub</a>
 					</div>
 				</div>
 
 			</div>
 		</div><!-- end of projects-->
 
-		<div class="aboutMe"><!-- start of workexperience-->
-			<h3 class="projects-title">About Me</h3>
-		</div><!-- end of workexperience-->
+		<div class="aboutMe"><!-- start of aboutme-->
+			<h3 id="about-title">ABOUT ME</h3>
+			<p id="aboutme-text">
+				I am Sofia. A girl born and raised in El Salvador who decided to come to the other side of the world to pursue her career in Computer Science.
+				Graduated in 2019 from Dong Hwa University in Taiwan, I am now eager to use everything I have learned in real life. I have a real passion for solving problems and making projects who provide a nice user experience.
+			</p>
+			<img id="profilepic" src="media/mypic.JPG">
+			<div class="resume">
+				<a id="resumelink" href="#">See my resume</a>
+				<img src="media/resume.jpg" id="resumeicon">
+			</div>
+		</div><!-- end of aboutme-->
+		
+		<div class="contact"><!-- start of contact-->
+			<h3 id="contact-title">CONTACT</h3>
+			<div id="contact-left">
 
+				<p class="contact-element"><i class="fas fa-at"></i> E-mail:</p>
+				<p class="contact-element"><i class="fab fa-whatsapp"></i> WhatsApp:</p>
+				<p class="contact-element"><i class="fab fa-line"></i> LINE:</p>
+				<p class="contact-element"><i class="fas fa-mobile-alt"></i> Cellphone:</p>
+			</div>
+			<div id="contact-right">
+				<p class="contact-element">sofialo23@outlook.com</p>
+				<p class="contact-element">(+886) 0978-584-104</p>
+				<p class="contact-element">sofialo91</p>
+				<p class="contact-element">(+886) 0978-584-104</p>
+			</div>
+			
+		</div><!-- end of contact-->
+		<div id="footer">
+			Sofia Lopez 2021
+		</div>
 	</div> <!-- end of container-->
 
-
+	<div class="top-scrollerx js-top-scrollerx svg-icons">
+   <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+</div>
 </body>
 </html>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    
+	$("#home-b").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".home").offset().top
+	    }, 1000);
+	});
+
+	$("#aboutme-b").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".aboutMe").offset().top
+	    }, 1000);
+	});
+
+	$("#projects-b").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".projects").offset().top
+	    }, 1000);
+	});
+
+
+	$("#contact-b").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".contact").offset().top
+	    }, 1000);
+	});
+
+	$(window).scroll(function(){
+  // console.log('wwww');
+  if ($(this).scrollTop() > 400) {
+    $('.js-top-scrollerx').fadeIn();
+  } else {
+    $('.js-top-scrollerx').fadeOut();
+  }
+});
+//Click event to scroll to top
+$('.js-top-scrollerx').click(function(){
+  $('html, body').animate({scrollTop : 0},1000);
+  return false;
+});
+
+});
+	
+	
+</script>
