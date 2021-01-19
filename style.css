@@ -126,7 +126,7 @@ html, body{
 
 .item-description{
 	font-size: 23px;
-	text-align: center;
+	text-align: justify;
 	margin-bottom: 10px;
 	margin-top: 25px;
 	width: 350px;
@@ -165,6 +165,7 @@ html, body{
   border-radius: 10px;
   text-decoration: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
    transform: scale(0.1);
@@ -332,3 +333,9 @@ position: fixed;
 }
  .top-scrollerx:hover {
     background: rgba(0,0,0,.6);
+ }
+
+ .credentials{
+ 	text-decoration: underline;
+ 	color: #000;
+ }
