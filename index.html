@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="menu-bar">
 				<a href="#" id="projects-b">Projects</a>
-				<a href="#" id="aboutme-b">About Me</a><a href="#" id="resume-b">Resume</a>
+				<a href="#" id="aboutme-b">About Me</a><a href="resume.html" target="_blank" id="resume-b">Resume</a>
 				<a href="#" id="contact-b">Contact</a>
 			
 		</div><!-- end of menu-bar-->
@@ -34,7 +34,7 @@
 			
 			<div class="projects-content">
 
-				<div class="project-item" >
+				<div class="project-item">
 					<h2 class="item-title">School's Events</h2>
 					<div class="img__wrap">
   						<img class="img__img" src="media/events.jpg" />
@@ -51,8 +51,8 @@
   						</a>
 					</div>
 					<div class="text-wrap">
-						<p class="item-description">A website created to keep everyone updated on school's events. It lets members create, edit and see the events happening. To try out the site: 
-						<span class="credentials">Username: 410321161
+						<p class="item-description">NDHU students can create an account to see and post events happening in school as well as see what others have posted. This to make sure everyone's aware of what's going on in campus.
+						<span class="credentials">User: 410321161
   						Password: 123</span>
   						</p>
 						<a class="codelink" href="https://github.com/sofialo23/myportfolio/tree/main/projects/events/examples" target="_blank">GitHub</a>
@@ -74,7 +74,7 @@
   						</a>
 					</div>
 					<div class="text-wrap">
-						<p class="item-description">A basic drums machine with 2 different sets. It includes a power and change bank button, also allows the user to adjust the volume.</p> <br/>
+						<p class="item-description">A basic drums machine with 2 different sets. It includes a power and change bank button, also allows the user to adjust the volume in the page. Buttons are hit with the mouse as well as the keyboard.</p>
 						<a class="codelink" href="https://github.com/sofialo23/drums-machine" target="_blank">GitHub</a>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 					<h2 class="item-title">Markdown Previewer</h2>
 					<div class="img__wrap">
   						<img class="img__img" src="media/markdown.jpg" />
-  						<a href="#" class="img_description" target="_blank">
+  						<a href="http://www.sofiacode.cf/projects/markdown-prev/" class="img_description" target="_blank">
   							<ul>
   								<li>HTML</li>
   								<li>CSS</li>
@@ -92,9 +92,8 @@
   						</a>
 					</div>
 					<div class="text-wrap">
-						<br/>
-						<p class="item-description">A react based application that allows the user to see the input markdown text converted to HTML in real time.</p>
-						<br/><a class="codelink" href="https://github.com/sofialo23/React-Markdown-Previewer" target="_blank">GitHub</a>
+						<p class="item-description">A react-based application that allows the user to input markdown text on the left side of the page, converts it real time to HTML and displays it on the right side.</p>
+						<a class="codelink" href="https://github.com/sofialo23/React-Markdown-Previewer" target="_blank">GitHub</a>
 					</div>
 				</div>
 
@@ -111,7 +110,7 @@
   						</a>
 					</div>
 					<div class="text-wrap">
-						<p class="item-description">Looking for some inspiration? Check out this jQuery based random quotes generator to get some.</p><br/>	
+						<p class="item-description">Looking for some inspiration? Check out this random quotes generator to get some. A jQuery-based application that displays a random quote with a different background color every time the user clicks the button.</p>
 						<a class="codelink" href="https://github.com/sofialo23/quotes-machine-jQuery" target="_blank">GitHub</a>
 					</div>
 				</div>
@@ -129,7 +128,7 @@
   						</a>
 					</div>
 					<div class="text-wrap">
-						<p class="item-description">A Javascript easy game. Chan doesn't like to take showers, but he loves his slippers. Help him get to them without getting wet in the process.</p> <br/>
+						<p class="item-description">An easy JavaScript game which makes use of the canvas. Chan doesn't like to take showers, but he loves his slippers. Help him get to them without getting wet in the process.</p><br>
 						<a class="codelink" href="https://github.com/sofialo23/myportfolio/tree/main/projects/Chan-game" target="_blank">GitHub</a>
 					</div>
 				</div>
@@ -149,7 +148,7 @@
   						</a>
 					</div>
 					<div class="text-wrap">
-						<p class="item-description">A member based online music store in which users can search for items and add/remove them from their cart. It simulates the check out.To access:
+						<p class="item-description">A membership based online music store in which users must register with an email account. After login in they can search for items and add/remove them from their cart. It only simulates the checkout. To access:
 						<span class="credentials">Username: sofia 
 						Password: sofia</span>
 						</p>
@@ -166,9 +165,10 @@
 				I am Sofia. A girl born and raised in El Salvador who decided to come to the other side of the world to pursue her career in Computer Science.
 				Graduated in 2019 from Dong Hwa University in Taiwan, I am now eager to use everything I have learned in real life. I have a real passion for solving problems and making projects who provide a nice user experience.
 			</p>
-			<img id="profilepic" src="media/mypic.JPG">
+			<img id="profilepic" src="media/mypic.jpg">
 			<div class="resume">
-				<a id="resumelink" href="#">See my resume</a>
+				<a id="resumelink" href="resume.html" target="_blank"
+				>See my resume</a>
 				<img src="media/resume.jpg" id="resumeicon">
 			</div>
 		</div><!-- end of aboutme-->
@@ -176,7 +176,6 @@
 		<div class="contact"><!-- start of contact-->
 			<h3 id="contact-title">CONTACT</h3>
 			<div id="contact-left">
-
 				<p class="contact-element"><i class="fas fa-at"></i> E-mail:</p>
 				<p class="contact-element"><i class="fab fa-whatsapp"></i> WhatsApp:</p>
 				<p class="contact-element"><i class="fab fa-line"></i> LINE:</p>
@@ -225,7 +224,6 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function(){
-  // console.log('wwww');
   if ($(this).scrollTop() > 400) {
     $('.js-top-scrollerx').fadeIn();
   } else {
