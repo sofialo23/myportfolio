@@ -53,7 +53,8 @@
     if($result_insert)
     {
       while($row = mysqli_fetch_array($result_query))
-      { echo "Data queried correctly";
+      {
+          
           $nuevoId = $row["activity_id"];
           
           $isTouch = empty($alldate[10]);
@@ -61,7 +62,7 @@
             $alldate[10] = 0;
 
           categoriesAct($nuevoId, $alldate[9], $alldate[10]);
-          echo $row["activity_id"];
+          echo $nuevoId;
           
           break;
       }

@@ -46,11 +46,12 @@ html, body{
 	flex-basis: 50%;
 	height: 100%;
 	text-align: center;
+	justify-content: center;
 	font-size: 60px;
 }
 
 #home-text p{
-	margin-top: 40%;
+	margin-top: 200px;
 	color: white;
 }
 
@@ -67,23 +68,20 @@ html, body{
 #port{
 	font-weight: bold;
 	font-size: 72px;
-	/*
-  background: -webkit-linear-gradient(#429edf, #23bf6d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
-  color: #d94f4f;
+  	color: #d94f4f;
 }
 
 
 .projects{
 	width: 100%;
-	height: auto;	
+	height: auto;
+	padding-bottom: 50px;	
 }
 
 .projects-title{
 	text-align: center;
 	font-size: 40px;
-	margin: 50px;
+	margin: 60px;
 	color: #444649;
 	text-decoration: underline;
 }
@@ -101,32 +99,39 @@ html, body{
 	flex-direction: column;
 	align-items: center;
 	flex-basis: 33%;
-	margin-bottom: 40px;
-	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.item-title{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	flex: 0 0 50px;
+	color: #616161;
 }
 
 .project-item img{
-	position: relative;
 	width: 250px;
 	height: 250px;
 	border-radius: 15px;
 }
 
-.item-title{
-	margin: 10px;
-	flex: 0 0 50px;
-	color: #616161;
+.text-wrap{
+	margin-top: auto;
 }
-
 .item-description{
 	font-size: 23px;
 	text-align: justify;
-	margin-bottom: 15px;
-	margin-top: 15px;
+	margin-top: 20px;
 	width: 350px;
 	color:#616161;
+	margin-bottom: 20px;
+	align-content: center;
+	align-items: center;
 }
 
+.codelink{
+	margin-top: auto;
+}
 
 /* quick reset */
 * {
@@ -357,7 +362,7 @@ position: fixed;
 	}
 	#home-img{
 		flex-basis: 25%;
-		width: 70%;
+		width: 190px;
 		height: auto;
 		margin-bottom: 10%;
 		background-size: contain;
@@ -414,78 +419,3 @@ position: fixed;
 
 
 }
-/*
-@media only screen and (max-width: 850px){
-	.aboutMe{
-		background-color: green;
-	}
-}*/
-
-/*
-.aboutMe{
-	width: 100%;
-	height: 800px;
-	background-color: #1b242f;
-	padding-top: 5px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	justify-content: center;
-}
-
-#about-title{
-	text-align: center;
-	font-size: 40px;
-	color: #FFF;
-	text-decoration: underline;
-	flex: 0 0 100%;
-	height: 50px;
-	margin: 30px;
-}
-
-#aboutme-text{
-	color: #FFF;
-	font-size: 25px;
-	width: 500px;
-	display: flex;
-	align-items: center;
-	margin: 80px;
-	text-align: justify;
-}
-
-#profilepic{
-	width: 300px;
-	height: 400px;
-	margin: 50px;
-}
-
-.resume{
-	flex: 0 0 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #d94f4f;
-	font-size: 30px;
-	transition-duration: 1s;
-	
-}
-
-#resumelink{
-	color: #d94f4f;
-	width: 200px;
-	text-decoration: none;
-}
-#resumelink:hover{
-	transform: scale(1.2);
-	transition-duration: 1s;
-}
-
-#resumeicon{
-	width: 40px;
-	height: 50px;
-	margin: 10px;
-	color: #fff;
-	font-style: none;
-}
-*/
